@@ -355,15 +355,46 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    draggable: false,
+    touchMove: false,
+    swipeToSlide: false,
+    swipe: false,
+    pauseOnHover: false,
+    pauseOnFocus:false,
+    responsive: [{
+      breakpoint: 880,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+
+
+
+/* ========== Works SLIDER ==========*/
+$(document).ready(function() {
+  $('.works-logos').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
     arrows: false,
     dots: false,
     draggable: true,
     touchMove: true,
-    swipeToSlide: false,
-    swipe: false,
+    swipeToSlide: true,
+    swipe: true,
     pauseOnHover: true,
-    pauseOnFocus:false,
+    pauseOnFocus:true,
     responsive: [{
       breakpoint: 880,
       settings: {
